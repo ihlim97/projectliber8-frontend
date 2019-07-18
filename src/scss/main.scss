@@ -1,0 +1,15 @@
+@import "mixins";
+@import "base/fontface.scss";
+@import "variables";
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "base/utilities.scss";
+
+.construction-banner {
+    background-image: url("../assets/img/hand-in-hand.jpg");
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
