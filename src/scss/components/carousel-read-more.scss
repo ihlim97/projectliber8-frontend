@@ -1,0 +1,8 @@
+.carousel-read-more {
+    
+    @include media-breakpoint-up(md) {
+        .slick-slide {
+            margin: 0 10px;
+        }
+    }
+}

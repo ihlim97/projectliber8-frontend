@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "projectliber8-3d4bf"
+  },
+  "targets": {
+    "projectliber8-3d4bf": {
+      "hosting": {
+        "static": [
+          "static-projectliber8"
+        ],
+        "temp": [
+          "projectliber8-3d4bf"
+        ]
+      }
+    }
   }
 }

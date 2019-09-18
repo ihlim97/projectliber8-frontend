@@ -1,0 +1,93 @@
+{% set active = "impact" %}
+{% set subnav = "advoc8" %}
+{% extends "partials/base.twig" %}
+
+{% block main %}
+
+    {% include "partials/components/banner-white-gradient.twig" with {
+        'subtitle': 'Advoc8 Series',
+        'background': 'assets/img/banner-6.jpg'
+    } %}
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12 text-centers">
+                <p class="font-weight-bold bt3 p1 py-5">Here at Project Liber8, we believe anyone can contribute to the fight against human trafficking. That’s how Advoc8 Series came about - we wanted to give everyone an opportunity to understand the issue better and learn how they can actively do something about it. These workshops are curated to bring out your best skills and talents, plus inspire you on ways you can help combat human trafficking.</p>
+            </div>                
+        </div>
+    </div>
+
+    {% embed "partials/components/banner-half-image.twig" with {
+        'image': 'assets/img/tile-3.jpg',
+        'flexDirection': ''
+    } %}
+        {% block content %}
+            <p class="bt3 p1">Here are things you can expect to learn from Advoc8 Series:</p>
+            <ul class="bt3 p2">
+                <li>Create and run campaigns with us</li>
+                <li>Connect with community and hear stories first hand on field trips </li>
+                <li>Gain insights from talks by experts from various backgrounds who can inspire you to use your talents for good </li>
+            </ul>
+        {% endblock %}
+    {% endembed %}
+
+    {% include "partials/components/banner-statistics.twig" with {
+        items : [
+            {
+                'number': '5',
+                'description': 'countries'
+            },
+            {
+                'number': '3,221',
+                'description': 'impacted youths'
+            },
+            {
+                'number': '132',
+                'description': 'solutions'
+            },
+            {
+                'number': '2,336,781',
+                'description': 'audience reach'
+            }
+        ]
+    } %}
+
+    <div class="container">
+        <div class="row d-flex align-items-center py-5">
+            <div class="col-12 col-md-4">
+                <h2 class="display-4 mb-4 mb-md-0">More great stuff</h2>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="carousel-read-more">
+                    <div class="card-read-more">
+                        <div class="card-thumb-img">
+                            <img src="assets/img/card-thumb-1.jpg" alt="">
+                        </div>
+                        <div class="content text-center">
+                            <h3>Advoc8 Hack</h3>
+                            <p class="bt3">
+                                Our first ever nationwide hackathon to come up with innovations to combat human trafficking!
+                            </p>
+                            <a href="#" class="btn btn-default btn-primary w">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card-read-more">
+                        <div class="card-thumb-img">
+                            <img src="assets/img/card-thumb-1.jpg" alt="">
+                        </div>
+                        <div class="content text-center">
+                            <h3>Advoc8 Hack</h3>
+                            <p class="bt3">
+                                Our first ever nationwide hackathon to come up with innovations to combat human trafficking!
+                            </p>
+                            <a href="#" class="btn btn-default btn-primary w">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+{% endblock %}

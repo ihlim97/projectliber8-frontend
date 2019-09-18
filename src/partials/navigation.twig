@@ -1,0 +1,37 @@
+<div class="navbar navbar-light bg-w navbar-expand-md">
+    <div class="d-flex justify-content-between align-items-center justify-content-md-center">
+        <a href="/" class="navbar-brand my-md-3">
+            <img src="assets/img/logo.svg" alt="Project Liber8 Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse d-md-flex justify-content-md-center" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item{% if active == 'index' %} active{% endif %}">
+                <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item{% if active == 'about' %} active{% endif %}">
+                <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item dropdown{% if active == 'impact' %} active{% endif %}">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown-impact" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Impact
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdown-impact">
+                    <a class="dropdown-item{% if subnav == 'advoc8' %} active{% endif %}" href="/impact.html">Advoc8 Series</a>
+                    <a class="dropdown-item{% if subnav == 'otg' %} active{% endif %}" href="/on-the-road.html">Advoc8 On The Go</a>
+                    <a class="dropdown-item" href="/impact.html">Technology</a>
+                    <a class="dropdown-item" href="/impact.html">Self-care Program</a>
+                </div>
+            </li>
+            <li class="nav-item{% if active == 'the-movement' %} active{% endif %}">
+                <a class="nav-link" href="/the-movement.html">The Movement</a>
+            </li>
+            <li class="nav-item{% if active == 'blog' %} active{% endif %}">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+        </ul>
+    </div>
+</div>

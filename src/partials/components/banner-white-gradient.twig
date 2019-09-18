@@ -1,0 +1,12 @@
+<div class="slide-item white-gradient-header">
+    <div class="content text-left text-md-right p-3 py-5 p-md-5 d-flex flex-column align-items-start align-items-md-end justify-content-start justify-content-md-center">
+        <h2 class="h1 p2">{{ title }}</h2>
+        {% if subtitle is defined %}
+            <h2 class="h1">{{ subtitle }}</h2>
+        {% endif %}
+        {% if description is defined %}
+            <h4 class="p2">{{description}}</h4>
+        {% endif %} 
+    </div>
+    <img src="{{ background }}" alt="kid" class="background">
+</div>

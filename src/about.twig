@@ -1,0 +1,148 @@
+{% set active = "about" %}
+{% extends "partials/base.twig" %}
+
+{% block main %}
+
+{% include "partials/components/banner-white-gradient.twig" with {
+    'title': 'About',
+    'subtitle': 'Project Liber8',
+    'background': 'assets/img/banner-5.jpg'
+} %}
+
+<div class="container">
+    <div class="row py-5">
+        <div class="col-12 text-center">
+            <p>Project Liber8 is a non-profit organization dedicated to shifting attitudes around human trafficking. We do this by engaging the public to action through youth mobilisation, public education, technology, research and creating strong partnerships.</p>
+            <p>Su Shern founded the organization at the age of 19 years old when she came across a documentary on human trafficking which compelled her to start advocating for the cause. Despite what others may think of "millenials", she believes that we do care about social issues and there is something powerful we can all contribute to. WIth the idea of tackling what may seem like the most complicated global issue targeting to an audience of youths that are known to be "hard to please" - Project Liber8 is set out to create an epic journey with you.</p>
+        </div>                
+    </div>
+</div>
+
+{% embed "partials/components/banner-half-image.twig" with {
+    'image': 'assets/img/tile-1.jpg',
+    'flexDirection': ''
+} %}
+    {% block content %}
+        <p>Slavery never ended. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet eos quibusdam officia accusantium nulla rerum possimus laborum sunt vero debitis deleniti aperiam, voluptate illum hic libero earum asperiores sed maxime commodi dolore maiores fuga fugit? Eveniet nemo perspiciatis rem.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos beatae illum aliquam nulla quas sequi cupiditate laboriosam veritatis exercitationem ipsa, praesentium fugiat, blanditiis eius. Eos vel aliquid modi autem nam.</p>
+    {% endblock %}
+
+    {% block title %}
+        <h2 class="display-4 w"><span class="p1">About</span> Human Trafficking</h2>
+    {% endblock %}
+{% endembed %}
+
+{% embed "partials/components/banner-half-image.twig" with {
+    'image': 'assets/img/tile-1.jpg',
+    'flexDirection': 'flex-row-reverse'
+} %}
+    {% block content %}
+        <p>Slavery never ended. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet eos quibusdam officia accusantium nulla rerum possimus laborum sunt vero debitis deleniti aperiam, voluptate illum hic libero earum asperiores sed maxime commodi dolore maiores fuga fugit? Eveniet nemo perspiciatis rem.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos beatae illum aliquam nulla quas sequi cupiditate laboriosam veritatis exercitationem ipsa, praesentium fugiat, blanditiis eius. Eos vel aliquid modi autem nam.</p>
+    {% endblock %}
+
+    {% block title %}
+        <h2 class="display-4 w"><span class="p1">About</span> Human Trafficking</h2>
+    {% endblock %}
+{% endembed %}
+
+<div class="bg-p1">
+    <div class="container">
+        <div class="row py-5 d-flex flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-9">
+                <div class="team-carousel">
+                    <div class="slide-item human-tile">
+                        <a href="#team-modal" data-toggle="modal">
+                            <img src="assets/img/tile-2.jpg" alt="" class="img-fluid">
+                        </a>
+                        <h3 class="p2">New Su Shern</h3>
+                        <p class="w">Founder<br> and executive director</p>
+                    </div>
+                    <div class="slide-item human-tile">
+                        <a href="#team-modal" data-toggle="modal">
+                            <img src="assets/img/tile-2.jpg" alt="" class="img-fluid">
+                        </a>
+                        <h3 class="p2">New Su Shern</h3>
+                        <p class="w">Founder<br> and executive director</p>
+                    </div>
+                    <div class="slide-item human-tile">
+                        <a href="#team-modal" data-toggle="modal">
+                            <img src="assets/img/tile-2.jpg" alt="" class="img-fluid">
+                        </a>
+                        <h3 class="p2">New Su Shern</h3>
+                        <p class="w">Founder<br> and executive director</p>
+                    </div>
+                    <div class="slide-item human-tile">
+                        <a href="#team-modal" data-toggle="modal">
+                            <img src="assets/img/tile-2.jpg" alt="" class="img-fluid">
+                        </a>
+                        <h3 class="p2">New Su Shern</h3>
+                        <p class="w">Founder<br> and executive director</p>
+                    </div>
+                    <div class="slide-item human-tile">
+                        <a href="#team-modal" data-toggle="modal">
+                            <img src="assets/img/tile-2.jpg" alt="" class="img-fluid">
+                        </a>
+                        <h3 class="p2">New Su Shern</h3>
+                        <p class="w">Founder<br> and executive director</p>
+                    </div>
+                    <div class="slide-item human-tile">
+                        <a href="#team-modal" data-toggle="modal">
+                            <img src="assets/img/tile-2.jpg" alt="" class="img-fluid">
+                        </a>
+                        <h3 class="p2">New Su Shern</h3>
+                        <p class="w">Founder<br> and executive director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 text-md-right">
+                <h2 class="p2 display-4">Meet the dream team</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-b1">
+    <div class="container">
+        <div class="row py-5 d-flex align-items-center">
+            <div class="col-12 col-md-3 text-center text-md-left">
+                <h2 class="display-4">Join the team</h2>
+            </div>
+            <div class="col-12 col-md-9 text-center">
+                <p class="lead">We are hiring!</p>
+                <p>Looking for a full-time gig where bein awesome is your main job? We are looking for passionate individuals to join us in the fight against human trafficking.</p>
+                <p>You will be part of the core team to plan, create and execute initiatives while honing your skills in specific areas. We work hard but we promise you we have lots of fun, too!</p>
+
+                <p class="lead">Available Roles:<br>Graphic Designer<br>Kuala Lumpur, Malaysia</p>
+
+                <p>Please click the link connected to each role to find out how to apply! If you have any questions or want to get in touch about anything else, please email <a href="mailto:careers@projectliber8.org">careers@projectliber8.org</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extras %}
+
+    {% embed "partials/components/modal.twig" with {
+        'modalId': 'team-modal',
+        'customClasses': 'team-modal'
+    } %}
+        {% block body %}
+            <div class="row">
+                <div class="col-12 col-md-6 p-5">
+                    <img src="assets/img/tile-2.jpg" alt="" class="img-fluid img-rounded">
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3 class="p2">New Su Shern</h3>
+                    <p class="p2 font-weight-medium">Founder and Executive Director</p>
+                    <p class="p1 font-weight-medium">
+                        Su Shern came across a video about a girl in a neighbouring country who was trafficked to a brothel at the age of 5 years old. She decided to power through her inspiration from that video to establish Project Liber8 at a tender age of 19 years old. It gets pretty difficult to overcome challenges on issues but she can be pretty funny sometimes, so that makes everything better. She strongly believes momentum is the driving force to your success so you won’t see her slowing down anytime soon. Fun fact - her birthday falls on the National Human Trafficking Awareness Day in the U.S. which we think it’s scarily coincidental! 
+                    </p>
+                </div>
+            </div>
+        {% endblock %}
+    {% endembed %}
+
+
+{% endblock %}

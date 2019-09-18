@@ -1,0 +1,23 @@
+<div class="{% if customClasses|length %}{{ customClasses }} {% endif %}modal fade" 
+     id="{{ modalId }}" tabindex="-1" role="dialog" aria-labelledby="{{ modalId }}" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header pl-4">
+                {% if modalTitle is defined %}
+                    <h3 class="modal-title p2 ml-1" id="exampleModalLongTitle">{{ modalTitle }}</h3>
+                {% endif %}
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg class="icon">
+                            <use xlink:href="assets/img/icons/icons.svg#sprite-close" href="assets/img/icons/icons.svg#sprite-close"></use>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="modal-body">
+                {% block body %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>

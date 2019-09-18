@@ -1,15 +1,22 @@
+@import "../../node_modules/bootstrap/scss/functions";
 @import "mixins";
-@import "base/fontface.scss";
+@import "../../node_modules/bootstrap/scss/mixins";
 @import "variables";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "base/fontface.scss";
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "base/utilities.scss";
 
-.construction-banner {
-    background-image: url("../assets/img/hand-in-hand.jpg");
-    background-size: cover;
-    height: 100vh;
-
-    display: flex;
-    align-items: center;
-}
+@import "components/navigation.scss";
+@import "components/hero-banner.scss";
+@import "components/white-gradient-header.scss";
+@import "components/feature-tile.scss";
+@import "components/image-responsive.scss";
+@import "components/footer.scss";
+@import "components/text-by-image-tile.scss";
+@import "components/team-carousel.scss";
+@import "components/team-modal.scss";
+@import "components/card-read-more.scss";
+@import "components/carousel-read-more.scss";
+@import "components/card-read-more-2.scss";

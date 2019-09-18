@@ -1,0 +1,38 @@
+<div class="bg-p1">
+    <div class="container-fluid px-5">
+        <div class="row py-5 d-flex flex-column-reverse flex-md-row align-items-center">
+            <div class="col-12 col-md-6 offset-md-1">
+                <div class="row d-flex justify-content-start">
+                    {% if items is defined %}
+                        {% for item in items %}
+                            <div class="col flex-grow-0 text-center mb-4 mb-md-0">
+                                <h2 class="display-4 w">{{ item.number }}</h2>
+                                <p class="w bt3 mb-0">{{ item.description }}</p>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="col flex-grow-0 text-center mb-4 mb-md-0">
+                            <h2 class="display-4 w">5</h2>
+                            <p class="w bt3 mb-0">countries</p>
+                        </div>
+                        <div class="col flex-grow-0 text-center mb-4 mb-md-0">
+                            <h2 class="display-4 w">3,221</h2>
+                            <p class="w bt3 mb-0">impacted youths</p>
+                        </div>
+                        <div class="col flex-grow-0 text-center mb-4 mb-md-0">
+                            <h2 class="display-4 w">132</h2>
+                            <p class="w bt3 mb-0">solutions</p>
+                        </div>
+                        <div class="col flex-grow-0 text-center mb-4 mb-md-0">
+                            <h2 class="display-4 w">2,336,781</h2>
+                            <p class="w bt3 mb-0">audience reach</p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
+                <h2 class="p2 display-4">The impact of Advoc8 Series</h2>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+.navbar {
+    display: block;
+
+    .navbar-brand img {
+        min-width: 200px;
+        height: auto;
+
+        @media (min-width: 768px) {
+            min-width: 400px;
+        }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            text-transform: uppercase;
+        }
+
+        .nav-link {
+            font-weight: bold;
+            transition: 0.2s ease;
+        }
+
+        @media (min-width: 768px) {
+            .nav-link {
+                margin: 0 30px;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        border-radius: 0;
+        border: none;
+
+        .dropdown-item {
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.5);
+            transition: 0.2s ease;
+
+            &:hover {
+                color: #212529;
+            }
+
+            &.active {
+                color: #212529;
+            }
+        }
+    }
+}

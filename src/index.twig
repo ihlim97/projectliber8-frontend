@@ -1,0 +1,65 @@
+{% set title = "Homepage" %}
+{% set active = "index" %}
+
+{% extends "partials/base.twig" %}
+{% block main %}
+    
+    {% include "partials/hero-carousel.twig" %}
+
+    {% embed "partials/feature-tile.twig" with {
+        "flexDirection": "",
+        "image": "assets/img/banner-3.jpg",
+        "description": "We believe that awareness is the first step towards action, and it is in the little things we do each day that can make a difference. We are a non-profit organization aiming to eraficate human trafficking."
+    } only %}
+        {% block title %}
+        <span class="p2">Let's create a</span> #SlaveFreeMalaysia <span class="p2">together</span>
+        {% endblock %}
+    {% endembed %}
+    
+    {% embed "partials/feature-tile.twig" with {
+        "flexDirection": "flex-row-reverse",
+        "image": "assets/img/banner-3.jpg",
+        "description": "We believe that awareness is the first step towards action, and it is in the little things we do each day that can make a difference. We are a non-profit organization aiming to eraficate human trafficking."
+    } only %}
+        {% block title %}
+        <span class="p2">You can <br>do something <br>Right here, right now</span>
+        {% endblock %}
+    {% endembed %}
+
+
+    <div class="bg-p1 mt-5">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12">
+                    <h2 class="display-4 p2">2.4 Million People</h2>
+                    <hr class="divider-1 w">
+                    <p class="w"><b>With your help, we have reached out to 2.4 million people <br class="d-none d-md-block">to spark awareness on the problem of human trafficking.</b></p>
+                </div>
+            </div>
+            <div class="row pb-4">
+                <div class="col-12 col-md-4 text-center">
+                    <h2 class="w display-3">220,000</h2>
+                    <p class="w"><b>Together, we have reached 220,000 students to learn about the issue of human trafficking</b></p>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <h2 class="w display-3">198,872</h2>
+                    <p class="w"><b>Together, awesome people like you have volunteered 198,872 hours to the issue</b></p>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <h2 class="w display-3">10</h2>
+                    <p class="w"><b>Together, we have helped 10 non-profit organisations in creating effective messaging on the issue</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-responsive">
+        <div class="content d-flex align-items-center text-right">
+            <div class="container">
+                <h2 class="display-4 w">Be a Volunteer</h2>
+                <button class="btn btn-primary btn-lg w">Read More</button>
+            </div>
+        </div>
+        <img src="assets/img/banner-4.jpg" alt="" class="background">
+    </div>
+{% endblock %}

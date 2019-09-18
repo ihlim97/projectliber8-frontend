@@ -1,0 +1,13 @@
+<div class="container-fluid text-by-image-tile p-0">
+    <div class="row no-gutters d-flex{% if flexDirection is defined %} {{ flexDirection }}{% endif %}">
+        <div class="col col-12 col-md-6 bg-b1 p-5 d-flex flex-column justify-content-center">
+            {% block content %}{% endblock %}
+        </div>
+        <div class="col col-12 col-md-6 pos-rel">
+            <div class="overlay-content p-5">
+                {% block title %}{% endblock %}
+            </div>
+            <img src="{{ image }}" alt="" class="background">
+        </div>
+    </div>
+</div>

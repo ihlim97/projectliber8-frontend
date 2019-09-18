@@ -5,23 +5,78 @@
 .bt1 {
     font-size: 26px;
     line-height: 32px;
+    font-weight: 600;
+}
+
+.bt2 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
 }
 
 .bt3 {
-    font-size: 17px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 22px;
+
+    @include media-breakpoint-up(md) {
+        line-height: 32px;
+    }
+}
+
+.p1 {
+    color: #bab6b5;
+}
+
+.bg-p1 {
+    background-color: #bab6b5;
 }
 
 .p2 {
-    color: #BFBFBF;
+    color: #565656;
 }
 
 .bg-p2 {
-    background-color: #BFBFBF;
+    background-color: #565656;
 }
+
+.bg-b1 {
+    background-color: #f9faf5;
+}
+
 
 .icon {
     display: inline-block;
     height: 30px;
     width: 30px;
+}
+
+@include media-breakpoint-up(md) {
+    .text-md-right {
+        text-align: right;
+    }
+
+    .text-md-left {
+        text-align: left;
+    }
+}
+
+.divider-1 {
+    width: 200px;
+    border-top: 3px solid currentColor;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.img-rounded {
+    border-radius: 50%;
+}
+
+.font-weight-medium {
+    font-family: 'Cereal';
+    font-weight: 600;
 }

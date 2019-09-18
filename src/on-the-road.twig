@@ -1,0 +1,214 @@
+{% set active = "impact" %}
+{% set subnav = "otg" %}
+{% extends "partials/base.twig" %}
+
+{% block main %}
+
+    {% include "partials/components/banner-white-gradient.twig" with {
+        'subtitle': 'Advoc8 Series',
+        'description': 'Inspiring the next wave of global changemakers',
+        'background': 'assets/img/banner-6.jpg'
+    } %}
+
+
+    {% embed "partials/components/banner-half-image.twig" with {
+        'image': 'assets/img/tile-3.jpg',
+        'flexDirection': ''
+    } %}
+        {% block content %}
+            <p class="bt3 p1">
+                Advoc8 On The Road explains what human trafficking is and why we started the initiative to fight against the issue. Our sessions talk about the realities of the issue and how we aspire to create bold campaigns to empower others to make a change. This programme challenges youths as they take their next step in creating anti-trafficking campaigns that will broaden their horizons, daring them to dream big and taking bold actions. In these sessions, the participants will not only get clear and comprehensive knowledge on human trafficking but also an exclusive peek at Project Liber8’s approach to innovative campaigns and solutions-focused thinking.
+            </p>
+        {% endblock %}
+    {% endembed %}
+
+    <div class="container">
+        <div class="row d-flex justify-content-center py-5">
+            <div class="col-8 text-center">                
+                <p class="bt2 p2">
+                    We have visited 23 schools and universities so far. Our goal is to reach to 100 schools - help us reach our target. Register your school today!
+                </p>
+                <a href="#" class="btn btn-default btn-secondary">
+                    Register Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    {% include "partials/components/banner-statistics.twig" with {
+        items : [
+            {
+                'number': '23',
+                'description': 'schools'
+            },
+            {
+                'number': '12,412',
+                'description': 'impacted students'
+            },
+            {
+                'number': '15',
+                'description': 'campaigns'
+            }
+        ]
+    } %}
+
+    <div class="container">
+        <div class="row d-flex align-items-center py-5">
+            <div class="col-12 col-md-3">
+                <h2 class="display-4 mb-4">Explore the right program</h2>
+                <a href="#book-session-modal" data-toggle="modal" class="btn btn-default btn-secondary mb-4 mb-md-0">Book a Session Now</a>
+            </div>
+            <div class="col-12 col-md-8 offset-md-1">
+                <div class="carousel-read-more-2">
+                    <div class="card-read-more-2">
+                        <div class="content">
+                            <p class="bt1 w">The Story Behind Project Liber8</p>
+                            <a href="#story-behind-modal" data-toggle="modal" class="btn btn-default w btn-primary">Find out more</a>
+                        </div>
+                        <div class="card-background-container">
+                            <img src="assets/img/tile-4.jpg" alt="" class="card-background">
+                        </div>
+                    </div>
+
+                    <div class="card-read-more-2">
+                        <div class="content">
+                            <p class="bt1 w">The Story Behind Project Liber8</p>
+                            <a href="#story-behind-modal" data-toggle="modal" class="btn btn-default w btn-primary">Find out more</a>
+                        </div>
+                        <div class="card-background-container">
+                            <img src="assets/img/tile-4.jpg" alt="" class="card-background">
+                        </div>
+                    </div>
+
+                    <div class="card-read-more-2">
+                        <div class="content">
+                            <p class="bt1 w">The Story Behind Project Liber8</p>
+                            <a href="#story-behind-modal" data-toggle="modal" class="btn btn-default w btn-primary">Find out more</a>
+                        </div>
+                        <div class="card-background-container">
+                            <img src="assets/img/tile-4.jpg" alt="" class="card-background">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+{% endblock %}
+
+{% block extras %}
+
+    {% embed "partials/components/modal.twig" with {
+        'modalId': 'story-behind-modal',
+        'customClasses': 'story-behind-modal'
+    } %}
+        {% block body %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="p2">The Story Behind Project Liber8</h3>
+    
+                        <p>
+                            Overview<br>
+                            <span class="p1">
+                                This is always a crowd pleaser! In this session, we share about our journey at Project Liber8 - how we started the organization, the challenges we faced, breaking the status-quo and of course, why we do what we do. Along the way, we’ve learned about grit, perseverance and getting outside of our comfort zone to pursue an idea we believe so strongly about. This session is about inspiring the next generation of changemakers towards a #SlaveFreeMalaysia.
+                            </span> 
+                        </p>
+        
+                        <p>
+                            Audience<br>
+                            <span class="p1">
+                                Form 1-5 and College or University Students 
+                            </span>
+                        </p>
+        
+                        <p>
+                            Length<br>
+                            <span class="p1">
+                                40 minutes to 70 minutes 
+                            </span>
+                        </p>
+        
+                        <p>
+                            Focus<br>
+                            <span class="p1">
+                                Human trafficking  |  Non profit organization  |  Starting from an idea  
+                            </span>
+                        </p>
+        
+                        <p class="mb-0">Outcomes</p>
+                        <ul class="p1">
+                            <li>Gain greater awareness about human trafficking</li>
+                            <li>Learn about running a nonprofit organization </li>
+                            <li>Recognizing how they can create an impact with their talent and skill </li>
+                            <li>Learn about the importance of determination, grit and perseverance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+    {% endembed %}
+    
+    {% embed "partials/components/modal.twig" with {
+        'modalId': 'book-session-modal',
+        'modalTitle': 'Book A Session Now',
+        'customClasses': 'book-session-modal'
+    } %}
+        {% block body %}
+            <div class="container">
+                <div class="form">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="full-name">FULL NAME</label>
+                                <input type="text" class="form-control" id="full-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-number">PHONE NUMBER:</label>
+                                <input type="text" class="form-control" id="phone-number">
+                            </div>
+                            <div class="form-group">
+                                <label for="email-addr">EMAIL ADDRESS:</label>
+                                <input type="text" class="form-control" id="email-addr">
+                            </div>
+                            <div class="form-group">
+                                <label for="organization">ORGANIZATION</label>
+                                <select class="form-control" id="organization">
+                                    <option>School</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="progs">PROGRAMS THAT YOU ARE INTERESTED IN:</label>
+                                <select class="form-control" id="progs">
+                                    <option>DO EPIC SHIT</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="venue">VENUE:</label>
+                                <input type="text" class="form-control" id="venue">
+                            </div>
+                            <div class="form-group">
+                                <label for="pref-date">PREFERRED DATE:</label>
+                                <input type="text" class="form-control" id="pref-date" placeholder="YYYY/MM/DD">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">MESSAGE</label>
+                                <input type="text" class="form-control" id="message" placeholder="Write your message here">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="col-12 text-right">
+                            <button class="btn btn-default btn-lg btn-secondary" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+    {% endembed %}
+
+{% endblock %}

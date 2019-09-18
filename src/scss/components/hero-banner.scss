@@ -1,0 +1,30 @@
+$slick-font-path: "~slick-carousel/slick/fonts/";
+$slick-loader-path: "~slick-carousel/slick/";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+.hero-carousel {
+    position: relative;
+
+    .slick-next,
+    .slick-prev {
+        z-index: 1;
+        
+        &::before {
+            color: transparent;
+        }
+    }
+
+    .slick-prev {
+        left: 20px;
+        background-image: url("../assets/img/previous.svg");
+        filter: brightness(100);
+    }
+
+    .slick-next {
+        right: 20px;
+        background-image: url("../assets/img/next.svg");
+    }
+
+}
+

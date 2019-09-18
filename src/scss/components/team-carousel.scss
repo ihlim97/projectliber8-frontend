@@ -1,0 +1,50 @@
+.team-carousel {
+
+    .slick-prev,
+    .slick-next {
+        z-index: 1;
+
+        &::before {
+            color: transparent;
+        }
+    }
+
+    .slick-prev {
+        left: 10px;
+        filter: brightness(1);
+
+        background-color: #fff;
+        -webkit-mask: url("../assets/img/previous.svg") no-repeat 50% 50%;;
+        mask: url("../assets/img/previous.svg") no-repeat 50% 50%;
+
+        @include media-breakpoint-up(md) {
+            left: -20px;
+        }
+        
+    }
+
+    .slick-next {
+        right: 10px;
+        background-color: #fff;
+        -webkit-mask: url("../assets/img/next.svg") no-repeat 50% 50%;;
+        mask: url("../assets/img/next.svg") no-repeat 50% 50%;
+
+        @include media-breakpoint-up(md) {
+            right: -20px;
+        }
+    }
+
+    .human-tile {
+        text-align: center;
+        padding: 20px;
+
+        img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 100%;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.card-read-more {
+    border: 2px solid $primary;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    
+    .card-thumb-img {
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .content {
+        padding: 20px;
+    }
+}

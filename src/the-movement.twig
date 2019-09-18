@@ -1,0 +1,255 @@
+{% set active = "the-movement" %}
+{% extends "partials/base.twig" %}
+
+{% block main %}
+
+    {% include "partials/components/banner-white-gradient.twig" with {
+        'subtitle': 'The Movement',
+        'background': 'assets/img/banner-7.jpg'
+    } %}
+
+    <div class="container">
+        <div class="row d-flex align-items-center py-5">
+            <div class="col-12 col-md-4">
+                <h2 class="display-4 p2 mb-4 mb-md-0">
+                    Volunteer Program
+                </h2>
+            </div>
+            <div class="col-12 col-md-6 offset-md-2">
+                <h4 class="p2">Register yourself as a volunteer!</h4>
+                <p class="bt3 p1">
+                    Do you want to make a change but don’t know where to start? Or want to donate your skills and time for good? We hear you say YES and this is a perfect opportunity for us to connect! Project Liber8 is dynamic and always on the lookout for passionate people and great ideas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    {% embed "partials/components/banner-half-image.twig" with {
+        'image': 'assets/img/tile-3.jpg',
+        'flexDirection': ''
+    } %}
+        {% block content %}
+            <p class="bt3 p1">Here’s what you can expect as a volunteer: </p>
+            <ul class="bt3 p2">
+                <li>
+                    We will match your unique skill set and availability with our partner NGOs, so that you can be awesome at assisting them on specific tasks
+                </li>
+                <li>
+                    Help us run cool events, or organise your own events with our support
+                </li>
+                <li>
+                    Receive insider updates on meetups and exclusive events before anyone else
+                </li>
+                <li>
+                    ]We value your opinion: share your ideas on how you think Project Liber8 can do better! 
+                </li>
+            </ul>
+        {% endblock %}
+    {% endembed %}
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center py-5">
+            <div class="col-12 text-center">
+                <h2 class="display-4 p2 mb-3">Be part of our Volunteer Program!</h2>
+                <a href="#" class="btn btn-default btn-secondary btn-lg">Register Now!</a>            
+            </div>
+            <div class="col-12 col-md-3 text-center pt-4">
+                <p>
+                    <small>*Once registered, you will receive a confirmation email and get invited to our Facebook Group, Friend of Project Liber8.</small>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="image-responsive">
+        <div class="content d-flex align-items-center text-right">
+            <div class="container-fluid py-5 text-center w">
+                <h2 class="display-4">Lobby With Us</h2>
+                <p class="bt1">Take the next step to combat human trafficking</p>
+            </div>
+        </div>
+        <img src="assets/img/banner-8.jpg" alt="" class="background">
+    </div>
+
+    <div class="bg-p1">
+        <div class="container">
+            <div class="row py-5 d-flex align-items-center">
+                <div class="col-12 col-md-6">
+                    <p class="w bt2">You'll play an important part in helping us lobby for better laws against human trafficking. Here's how you can get involved.</p>
+                    <ul class="bt2 w">
+                        <li>Attend an initial meetup to learn more about the issue and what we are lobbying for</li>
+                        <li>Get a training session (1 day) on how to approach MPs in Parliament </li>
+                        <li>Participate on lobbying day and put your training into action. We’ll do this together, so don’t worry about feeling alone!</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <p class="bt1 p2">
+                        Feel like this is something you'll be interested in? Register as a volunteer for lobbying today!
+                    </p>
+                    <a href="#" class="btn btn-default btn-light btn-lg">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <div class="row d-flex align-items-center py-5">
+            <div class="col-12">
+                <h2 class="display-4 mb-4">Resources</h2>
+            </div>
+            <div class="col-12">
+                <div class="carousel-read-more-2">
+                    <div class="card-read-more-2">
+                        <div class="content">
+                            <p class="bt1 w">The Story Behind Project Liber8</p>
+                            <a href="#story-behind-modal" data-toggle="modal" class="btn btn-default w btn-primary">Find out more</a>
+                        </div>
+                        <div class="card-background-container">
+                            <img src="assets/img/tile-4.jpg" alt="" class="card-background">
+                        </div>
+                    </div>
+
+                    <div class="card-read-more-2">
+                        <div class="content">
+                            <p class="bt1 w">The Story Behind Project Liber8</p>
+                            <a href="#story-behind-modal" data-toggle="modal" class="btn btn-default w btn-primary">Find out more</a>
+                        </div>
+                        <div class="card-background-container">
+                            <img src="assets/img/tile-4.jpg" alt="" class="card-background">
+                        </div>
+                    </div>
+
+                    <div class="card-read-more-2">
+                        <div class="content">
+                            <p class="bt1 w">The Story Behind Project Liber8</p>
+                            <a href="#story-behind-modal" data-toggle="modal" class="btn btn-default w btn-primary">Find out more</a>
+                        </div>
+                        <div class="card-background-container">
+                            <img src="assets/img/tile-4.jpg" alt="" class="card-background">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+{% endblock %}
+
+{% block extras %}
+
+    {% embed "partials/components/modal.twig" with {
+        'modalId': 'story-behind-modal',
+        'customClasses': 'story-behind-modal'
+    } %}
+        {% block body %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="p2">The Story Behind Project Liber8</h3>
+    
+                        <p>
+                            Overview<br>
+                            <span class="p1">
+                                This is always a crowd pleaser! In this session, we share about our journey at Project Liber8 - how we started the organization, the challenges we faced, breaking the status-quo and of course, why we do what we do. Along the way, we’ve learned about grit, perseverance and getting outside of our comfort zone to pursue an idea we believe so strongly about. This session is about inspiring the next generation of changemakers towards a #SlaveFreeMalaysia.
+                            </span> 
+                        </p>
+        
+                        <p>
+                            Audience<br>
+                            <span class="p1">
+                                Form 1-5 and College or University Students 
+                            </span>
+                        </p>
+        
+                        <p>
+                            Length<br>
+                            <span class="p1">
+                                40 minutes to 70 minutes 
+                            </span>
+                        </p>
+        
+                        <p>
+                            Focus<br>
+                            <span class="p1">
+                                Human trafficking  |  Non profit organization  |  Starting from an idea  
+                            </span>
+                        </p>
+        
+                        <p class="mb-0">Outcomes</p>
+                        <ul class="p1">
+                            <li>Gain greater awareness about human trafficking</li>
+                            <li>Learn about running a nonprofit organization </li>
+                            <li>Recognizing how they can create an impact with their talent and skill </li>
+                            <li>Learn about the importance of determination, grit and perseverance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+    {% endembed %}
+    
+    {% embed "partials/components/modal.twig" with {
+        'modalId': 'book-session-modal',
+        'modalTitle': 'Book A Session Now',
+        'customClasses': 'book-session-modal'
+    } %}
+        {% block body %}
+            <div class="container">
+                <div class="form">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="full-name">FULL NAME</label>
+                                <input type="text" class="form-control" id="full-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-number">PHONE NUMBER:</label>
+                                <input type="text" class="form-control" id="phone-number">
+                            </div>
+                            <div class="form-group">
+                                <label for="email-addr">EMAIL ADDRESS:</label>
+                                <input type="text" class="form-control" id="email-addr">
+                            </div>
+                            <div class="form-group">
+                                <label for="organization">ORGANIZATION</label>
+                                <select class="form-control" id="organization">
+                                    <option>School</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="progs">PROGRAMS THAT YOU ARE INTERESTED IN:</label>
+                                <select class="form-control" id="progs">
+                                    <option>DO EPIC SHIT</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="venue">VENUE:</label>
+                                <input type="text" class="form-control" id="venue">
+                            </div>
+                            <div class="form-group">
+                                <label for="pref-date">PREFERRED DATE:</label>
+                                <input type="text" class="form-control" id="pref-date" placeholder="YYYY/MM/DD">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">MESSAGE</label>
+                                <input type="text" class="form-control" id="message" placeholder="Write your message here">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="col-12 text-right">
+                            <button class="btn btn-default btn-lg btn-secondary" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+    {% endembed %}
+
+{% endblock %}
