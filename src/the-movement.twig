@@ -26,7 +26,8 @@
 
     {% embed "partials/components/banner-half-image.twig" with {
         'image': 'assets/img/tile-3.jpg',
-        'flexDirection': ''
+        'flexDirection': '',
+        'background': 'bg-b1'
     } %}
         {% block content %}
             <p class="bt3 p1">Here’s what you can expect as a volunteer: </p>
@@ -99,7 +100,7 @@
             <div class="col-12">
                 <h2 class="display-4 mb-4">Resources</h2>
             </div>
-            <div class="col-12">
+            <div class="col-12 carousel-read-more-2-container">
                 <div class="carousel-read-more-2">
                     <div class="card-read-more-2">
                         <div class="content">
@@ -107,7 +108,7 @@
                             <a href="#story-behind-modal" data-toggle="modal" class="btn btn-default w btn-primary">Find out more</a>
                         </div>
                         <div class="card-background-container">
-                            <img src="assets/img/tile-4.jpg" alt="" class="card-background">
+                            <img src="assets/img/tile-5.jpg" alt="" class="card-background">
                         </div>
                     </div>
 
@@ -117,7 +118,7 @@
                             <a href="#story-behind-modal" data-toggle="modal" class="btn btn-default w btn-primary">Find out more</a>
                         </div>
                         <div class="card-background-container">
-                            <img src="assets/img/tile-4.jpg" alt="" class="card-background">
+                            <img src="assets/img/tile-5.jpg" alt="" class="card-background">
                         </div>
                     </div>
 
@@ -127,9 +128,33 @@
                             <a href="#story-behind-modal" data-toggle="modal" class="btn btn-default w btn-primary">Find out more</a>
                         </div>
                         <div class="card-background-container">
-                            <img src="assets/img/tile-4.jpg" alt="" class="card-background">
+                            <img src="assets/img/tile-5.jpg" alt="" class="card-background">
                         </div>
                     </div>
+
+                    <div class="card-read-more-2">
+                        <div class="content">
+                            <p class="bt1 w">The Story Behind Project Liber8</p>
+                            <a href="#story-behind-modal" data-toggle="modal" class="btn btn-default w btn-primary">Find out more</a>
+                        </div>
+                        <div class="card-background-container">
+                            <img src="assets/img/tile-5.jpg" alt="" class="card-background">
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-prev">
+                    <button type="button" class="slick-prev">
+                        <svg class="icon icon-xxl">
+                            <use xlink:href="img/icons/icons.svg#sprite-chevron-right" href="img/icons/icons.svg#sprite-chevron-right"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="arrow-next">
+                    <button type="button" class="slick-next">
+                        <svg class="icon icon-xxl">
+                            <use xlink:href="img/icons/icons.svg#sprite-chevron-right" href="img/icons/icons.svg#sprite-chevron-right"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>

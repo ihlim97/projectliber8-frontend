@@ -1,0 +1,55 @@
+.carousel.variant-blog-entry {
+
+    .slide-item {
+        img {
+            width: 100%;
+        }
+    }
+    .arrow-next, .arrow-prev {
+        display: inline-block;
+        
+        svg {
+            fill: $primary;
+        }
+
+        button {
+            height: auto;
+            width: auto;
+        }
+
+        button::before {
+            display: none;
+        }
+    }
+
+    .arrow-prev svg {
+        transform: rotate(180deg);
+    }
+
+    .arrow-prev {
+        button {
+            left: 0;
+        }
+    }
+
+    .arrow-next {
+        button {
+            right: 0;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .arrow-prev {
+            button {
+                left: -40px;
+            }
+        }
+    
+        .arrow-next {
+            button {
+                right: -40px;
+            }
+        }
+    }
+
+}

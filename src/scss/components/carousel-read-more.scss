@@ -6,3 +6,22 @@
         }
     }
 }
+
+.carousel-read-more-2-container {
+
+    .arrow-next, .arrow-prev {
+        display: inline-block;
+        
+        svg {
+            fill: $primary;
+        }
+
+        button::before {
+            display: none;
+        }
+    }
+
+    .arrow-prev svg {
+        transform: rotate(180deg);
+    }
+}

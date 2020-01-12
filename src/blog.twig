@@ -1,0 +1,54 @@
+{% set active = "blog" %}
+
+{% extends "partials/base.twig" %}
+{% block main %}
+    
+    {% include "partials/components/banner-white-gradient.twig" with {
+        'subtitle': 'Blog',
+        'background': 'assets/img/banner-11.jpg'
+    } %}
+
+    <div class="container py-5">
+        <p class="bt1 p2">
+            Get the scoop on our new initiatives, learn more about human trafficking <br>and what we do, and view our past work.
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                {% include "partials/components/card-article.twig" %}
+            </div>
+            <div class="col-12 col-md-4">
+                {% include "partials/components/card-article.twig" %}
+            </div>
+            <div class="col-12 col-md-4">
+                <a href="#" class="card-article">
+                    <div class="card-main">
+                        <div class="content">
+                            <p class="w">Read more</p>
+                        </div>
+                        <img src="assets/img/tile-8.png" alt="" class="background">
+                    </div>
+                    <div class="card-title mt-2">
+                        <p class="bt2 p2">This is a really really long title that will flow to the next line.</p>
+                    </div>
+                    <svg class="card-nav-icon icon icon-l">
+                        <use xlink:href="img/icons/icons.svg#sprite-chevron-right" href="img/icons/icons.svg#sprite-chevron-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="col-12 col-md-4">
+                {% include "partials/components/card-article.twig" %}
+            </div>
+            <div class="col-12 col-md-4">
+                {% include "partials/components/card-article.twig" %}
+            </div>
+            <div class="col-12 col-md-4">
+                {% include "partials/components/card-article.twig" %}
+            </div>
+        </div>
+        <hr>
+    </div>
+
+{% endblock %}

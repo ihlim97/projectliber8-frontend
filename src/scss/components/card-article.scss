@@ -1,0 +1,79 @@
+.card-article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .card-main {
+        flex: 4;
+    }
+
+    .card-title {
+        flex: 8;
+        text-align: left;
+        padding-left: 1rem;
+        margin-bottom: 0;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    .card-main {
+        position: relative;
+
+        .background {
+            width: 100%;
+            height: auto;
+        }
+
+        .content {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.2s ease;
+        }
+
+        &::before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            background-color: rgba(0,0,0,0.7);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.2s ease;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        display: block;
+
+        .card-title {
+            text-align: center;
+            padding-left: 0;
+        }
+
+        &:hover {
+            .card-main::before,
+            .content {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .card-nav-icon {
+            display: none;
+        }
+    }
+}

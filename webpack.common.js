@@ -39,8 +39,8 @@ module.exports = {
                 use: {
                     loader: "file-loader",
                     options: {
-                        name: "[name].[hash].[ext]",
-                        outputPath: "assets/img"
+                        name: "[name].[ext]",
+                        outputPath: "img"
                     }
                 }
             },
@@ -50,8 +50,8 @@ module.exports = {
                 use: {
                     loader: "file-loader",
                     options: {
-                        name: "[name].[hash].[ext]",
-                        outputPath: "assets/fonts"
+                        name: "[name].[ext]",
+                        outputPath: "fonts"
                     }
                 }
             },
@@ -102,7 +102,7 @@ module.exports = {
         })),
         new SVGSpritemapPlugin("src/assets/img/icons/**/*.svg", {
             output: {
-                filename: "assets/img/icons/icons.svg",
+                filename: "img/icons/icons.svg",
             }
         }),
         new MiniCssExtractPlugin({

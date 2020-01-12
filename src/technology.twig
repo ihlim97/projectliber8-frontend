@@ -1,0 +1,74 @@
+{% set active = "impact" %}
+{% set subnav = "tech" %}
+{% extends "partials/base.twig" %}
+
+{% block main %}
+
+    {% include "partials/components/banner-white-gradient.twig" with {
+        'subtitle': 'Technology',
+        'background': 'assets/img/banner-9.jpg'
+    } %}
+
+    <div class="container">
+        <div class="row d-flex align-items-center py-5">
+            <div class="col-10 offset-1">
+                <h3 class="p2 mb-4 mt-5 mb-md-0 text-center">
+                    Project Liber8 aims to use technology as part of our core initiative to counter the issue.
+                </h3>
+            </div>
+            <div class="col-12">
+                <div class="row mt-5 mb-5">
+                    <div class="col-12 col-md-4">
+                        <div class="image-responsive variant-technology">
+                            <div class="content d-flex align-items-end text-left">
+                                <div class="container">
+                                    <h3 class="w">Big Data Analysis</h3>
+                                </div>
+                            </div>
+                            <img src="assets/img/tile-6.jpg" alt="" class="background">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="image-responsive variant-technology">
+                            <div class="content d-flex align-items-end text-left">
+                                <div class="container">
+                                    <h3 class="w">Big Data Analysis</h3>
+                                </div>
+                            </div>
+                            <img src="assets/img/tile-6.jpg" alt="" class="background">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="image-responsive variant-technology">
+                            <div class="content d-flex align-items-end text-left">
+                                <div class="container">
+                                    <h3 class="w">Big Data Analysis</h3>
+                                </div>
+                            </div>
+                            <img src="assets/img/tile-6.jpg" alt="" class="background">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% embed "partials/components/banner-half-image.twig" with {
+        'image': 'assets/img/tile-1.jpg',
+        'flexDirection': 'flex-row',
+        'background': 'bg-b1'
+    } %}
+        {% block content %}
+            <p class="bt3 p1">With the rise of sophisticated technological platforms, from social media platforms, accessibility of online advertisements, encrypted messaging apps and other communication platforms, human traffickers now have more opportunities than ever to reach out to more potential victims with technology.</p>
+            <p class="bt3 p1">While new technologies become increasingly advanced, it is also the main key in helping us eradicate the problem. Some examples of great tech related initiative are used to discover and rescue victims, sharing and analyzing data from hotlines, locating trafficking activity or using big data analysis to create prevention campaigns.</p>
+            <p class="bt3 p1">If you have any inquiries or want to contribute in this initiative, you can email us to get in touch!</p>
+        {% endblock %}
+
+        {# {% block title %}
+            <h2 class="display-4 w"><span class="p1">About</span> Human Trafficking</h2>
+        {% endblock %} #}
+    {% endembed %}
+
+    
+
+{% endblock %}

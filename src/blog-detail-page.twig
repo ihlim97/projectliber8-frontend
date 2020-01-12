@@ -1,0 +1,52 @@
+{% set active = "blog" %}
+
+{% extends "partials/base.twig" %}
+{% block main %}
+    
+    <div class="container px-0 px-md-3">
+        <div class="carousel variant-blog-entry">
+            <div class="carousel-container">
+                <div class="slide-item">
+                    <img src="assets/img/banner-12.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="assets/img/banner-13.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="assets/img/banner-12.jpg" alt="">
+                </div>
+            </div>
+            <div class="carousel-navigation">
+                <div class="arrow-prev">
+                    <button type="button" class="slick-prev">
+                        <svg class="icon icon-xxl p1">
+                            <use xlink:href="img/icons/icons.svg#sprite-chevron-right" href="img/icons/icons.svg#sprite-chevron-right"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="arrow-next">
+                    <button type="button" class="slick-next">
+                        <svg class="icon icon-xxl p1">
+                            <use xlink:href="img/icons/icons.svg#sprite-chevron-right" href="img/icons/icons.svg#sprite-chevron-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12">
+                <h1 class="display-4 text-center p2 mb-3">Neon night run</h1>
+
+                <p class="bt3 p1">
+                    Do you know what to look out for when it comes to human trafficking issues? Or what number to call when you see a potential human trafficking situation? Well, Neon Night Run was definitely not your average run - yes, there were tons of fun, colourful, glow sticks and after-party but most importantly, there were indicators of trafficking runners can look out for along the course of the run. We also printed the hotline numbers at the back of the runners’ t-shirts for people to remember! With over 2,000 people participated in the race, we were certain to see a brighter future for a #SlaveFreeMalaysia. 
+                </p>
+
+            </div>
+        </div>
+        <hr class="mt-3">
+    </div>
+
+{% endblock %}

@@ -26,6 +26,12 @@
             }
         }
     }
+    
+    &.variant-no-gradient {
+        .content::before {
+            display: none;
+        }
+    }
 
     img.background {
         width: 100%;

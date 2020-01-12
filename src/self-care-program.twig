@@ -1,0 +1,103 @@
+{% set active = "impact" %}
+{% set subnav = "selfcare" %}
+{% extends "partials/base.twig" %}
+
+{% block main %}
+
+    {% include "partials/components/banner-white-gradient.twig" with {
+        'subtitle': 'Self-care Programme',
+        'background': 'assets/img/banner-10.jpg'
+    } %}
+
+    <div class="container">
+        <div class="row d-flex align-items-center py-5">
+            <div class="col-10 offset-1">
+                <div class="p1 bt3 mb-4 mt-5 mb-md-0 text-center">
+                    <p>In Project Liber8, we believe we are our greatest resource in fighting against human trafficking. We care a lot about the future of this world and we also know a lot of our partnering organizations do as well. But ironically, our own wellbeing can end up being neglected especially with all the people, issues and campaigns that we care about deeply.</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row mt-5 mb-5">
+                    <div class="col-12 col-md-4">
+                        <div class="image-responsive variant-technology">
+                            <div class="content d-flex align-items-end text-left">
+                                <div class="container">
+                                    <h3 class="w">Big Data Analysis</h3>
+                                </div>
+                            </div>
+                            <img src="assets/img/tile-6.jpg" alt="" class="background">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="image-responsive variant-technology">
+                            <div class="content d-flex align-items-end text-left">
+                                <div class="container">
+                                    <h3 class="w">Big Data Analysis</h3>
+                                </div>
+                            </div>
+                            <img src="assets/img/tile-6.jpg" alt="" class="background">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="image-responsive variant-technology">
+                            <div class="content d-flex align-items-end text-left">
+                                <div class="container">
+                                    <h3 class="w">Big Data Analysis</h3>
+                                </div>
+                            </div>
+                            <img src="assets/img/tile-6.jpg" alt="" class="background">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% embed "partials/components/banner-half-image.twig" with {
+        'image': 'assets/img/tile-7.jpg',
+        'flexDirection': 'flex-row',
+        'background': 'bg-w'
+    } %}
+        {% block content %}
+            <p class="bt3 p1">
+                We want to create an environment for organizations like ourselves to be more resilient. Why? Because the world needs us - not the burn out, exhausted, frustrated, caffeine-loaded us but a version of our best self that is efficient powerful, and inspired in our work. 
+            </p>
+            <p class="bt3 p1">
+                These programmes will cater organizations in a way that will sustain them for the long haul and leaving them feelin’ good as ever! Here is what is included:
+            </p>
+            <p class="bt3">
+                6 session programs for 3 months<br>
+                Networking sessions with like-minded organizations<br>
+                Resilience training<br>
+                Professionally trained instructor for programmes 
+            </p>
+        {% endblock %}
+
+        {# {% block title %}
+            <h2 class="display-4 w"><span class="p1">About</span> Human Trafficking</h2>
+        {% endblock %} #}
+    {% endembed %}
+
+    <div class="container-fluid bg-p1">
+        <div class="row py-5">
+            <div class="mt-3 col-12 col-md-8 offset-md-2 text-center">
+                <h3 class="p2">Know an organization that would benefit from this programme, or are from an organisation yourself? </h3>
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div class="col-12 col-md-6 offset-md-3">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="#" class="btn btn-light btn-lg mb-4">Register now</a>
+                        <p class="bt2 p2">Nominate yourself or someone you know to our self-care programme!</p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="#" class="btn btn-light btn-lg mb-4">Register now</a>
+                        <p class="bt2 p2">Nominate yourself or someone you know to our self-care programme!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

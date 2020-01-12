@@ -22,15 +22,18 @@
                 <div class="dropdown-menu" aria-labelledby="dropdown-impact">
                     <a class="dropdown-item{% if subnav == 'advoc8' %} active{% endif %}" href="/impact.html">Advoc8 Series</a>
                     <a class="dropdown-item{% if subnav == 'otg' %} active{% endif %}" href="/on-the-road.html">Advoc8 On The Go</a>
-                    <a class="dropdown-item" href="/impact.html">Technology</a>
-                    <a class="dropdown-item" href="/impact.html">Self-care Program</a>
+                    <a class="dropdown-item{% if subnav == 'tech' %} active{% endif %}" href="/technology.html">Technology</a>
+                    <a class="dropdown-item{% if subnav == 'selfcare' %} active{% endif %}" href="/self-care-program.html">Self-care Program</a>
                 </div>
             </li>
             <li class="nav-item{% if active == 'the-movement' %} active{% endif %}">
                 <a class="nav-link" href="/the-movement.html">The Movement</a>
             </li>
             <li class="nav-item{% if active == 'blog' %} active{% endif %}">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="/blog.html">Blog</a>
+            </li>
+            <li class="nav-item{% if active == 'shop' %} active{% endif %}">
+                <a class="nav-link" href="#">Shop</a>
             </li>
         </ul>
     </div>
